@@ -55,15 +55,11 @@ public class SolutionWithCountingSort {
 
   private static double findMedian() {
     int length = trailingDays_sorted.length;
-    return length % 2 != 0
-        ? (double) trailingDays_sorted[length / 2]
-        : ((double) trailingDays_sorted[(length / 2) - 1]
-                + (double) trailingDays_sorted[length / 2])
-            / 2;
+    return length % 2 != 0  ? (double) trailingDays_sorted[length / 2]
+                            : ((double) trailingDays_sorted[(length / 2) - 1] + (double) trailingDays_sorted[length / 2]) / 2;
   }
 
   private static void countingSort_trailingDays() {
-
     int index_sorted = 0;
     for (int i = 0; i < frequency.length; i++) {
 
