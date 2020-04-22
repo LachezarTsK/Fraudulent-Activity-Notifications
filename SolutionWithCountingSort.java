@@ -21,6 +21,16 @@ public class SolutionWithCountingSort {
     System.out.println(total_notifications);
   }
 
+  
+  /**
+   * Finds the number of issued notifications for the period encompassing 
+   * the days with transaction data (days_withTransactionData). 
+   *
+   * Notification is issued each time when the expenditure for a given day exceeds 
+   * the median expenditure for the specified previos number of days (trailingDays).
+   *
+   * @return An integer, representing the number of issued notifications.
+   */
   private static int find_numberOfNotifications(int trailingDays, int[] expenditure) {
 
     int notifications = 0;
