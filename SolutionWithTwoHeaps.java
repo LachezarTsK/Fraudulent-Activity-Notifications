@@ -23,10 +23,11 @@ public class SolutionWithTwoHeaps {
   }
 
   /**
-   * Finds the number of issued notifications for the period encompassing the days with transaction
-   * data (days_withTransactionData). Notification is issued each time when the expenditure for a
-   * given day exceeds the median expenditure for the specified previos number of days
-   * (trailingDays).
+   * Finds the number of issued notifications for the period encompassing 
+   * the days with transaction data (days_withTransactionData). 
+   *
+   * Notification is issued each time when the expenditure for a given day exceeds 
+   * the median expenditure for the specified previos number of days (trailingDays).
    *
    * @return An integer, representing the number of issued notifications.
    */
